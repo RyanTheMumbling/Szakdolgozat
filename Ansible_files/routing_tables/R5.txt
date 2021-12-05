@@ -1,0 +1,12 @@
+Gateway of last resort is not set
+
+      171.16.0.0/16 is variably subnetted, 6 subnets, 2 masks
+C        171.16.25.0/30 is directly connected, GigabitEthernet0/2
+L        171.16.25.2/32 is directly connected, GigabitEthernet0/2
+C        171.16.35.0/30 is directly connected, GigabitEthernet0/3
+L        171.16.35.2/32 is directly connected, GigabitEthernet0/3
+C        171.16.45.0/30 is directly connected, GigabitEthernet0/4
+L        171.16.45.2/32 is directly connected, GigabitEthernet0/4
+      192.168.2.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.2.0/24 is directly connected, GigabitEthernet0/5
+L        192.168.2.1/32 is directly connected, GigabitEthernet0/5

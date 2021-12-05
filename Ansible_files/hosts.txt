@@ -1,0 +1,13 @@
+[servers] 
+10.10.20.50 ansible_python_interpreter="/usr/bin/env python" ansible_ssh_user=developer
+
+[routers]
+R1 ansible_host=10.10.20.181 ansible_python_interpreter="/usr/bin/env python" ansible_ssh_user=Boti
+R2 ansible_host=10.10.20.182 ansible_python_interpreter="/usr/bin/env python" ansible_ssh_user=Boti
+R3 ansible_host=10.10.20.183 ansible_python_interpreter="/usr/bin/env python" ansible_ssh_user=Boti
+R4 ansible_host=10.10.20.184 ansible_python_interpreter="/usr/bin/env python" ansible_ssh_user=Boti
+R5 ansible_host=10.10.20.185 ansible_python_interpreter="/usr/bin/env python" ansible_ssh_user=Boti
+
+[ubuntu_pc]
+ubuntu-0 ansible_host=10.10.20.191 ansible_python_interpreter="/usr/bin/env python" ansible_ssh_user=cisco
+ubuntu-1 ansible_host=10.10.20.192 ansible_python_interpreter="/usr/bin/env python" ansible_ssh_user=cisco

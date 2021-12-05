@@ -1,0 +1,20 @@
+#get the routig tables from the routers
+#
+---
+ - name: Retrieve routing information
+   hosts: routers 
+   gather_facts: False
+   connection: network_cli
+
+   tasks: 
+    - name: "Get the routing tables from the routers"
+      ios_command:
+        commands:
+          - show ip route | begin Gate
+      register: route_info
+
+    - name: "Print routing tables"
+      copy:
+        content: "{{route_info.stdout[0] }}"
+        dest: "/home/botond/szakdolgozat/routing_tables/{{inventory_hostname}}.txt"
+  
