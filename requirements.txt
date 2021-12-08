@@ -1,0 +1,4 @@
+ansible==2.9.16
+networkx==2.6.3
+matplotlib
+netaddr
